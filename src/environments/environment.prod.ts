@@ -10,11 +10,12 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://api.dev-markisa.inveeu.com',
+    issuer: 'http://api.dev-markisa.inveeu.com',
     redirectUri: baseUrl,
     clientId: 'Markisa_App',
     responseType: 'code',
     scope: 'offline_access Markisa',
+    strictDiscoveryDocumentValidation: false
   },
   apis: {
     default: {
