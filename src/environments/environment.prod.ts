@@ -1,6 +1,6 @@
 import { Environment } from '@abp/ng.core';
 
-const baseUrl = 'http://localhost:4200';
+const baseUrl = 'https://dev-markisa.inveeu.com';
 
 export const environment = {
   production: true,
@@ -10,15 +10,16 @@ export const environment = {
     logoUrl: '',
   },
   oAuthConfig: {
-    issuer: 'https://localhost:44372',
+    issuer: 'http://api.dev-markisa.inveeu.com',
     redirectUri: baseUrl,
     clientId: 'Markisa_App',
     responseType: 'code',
     scope: 'offline_access Markisa',
+    strictDiscoveryDocumentValidation: false
   },
   apis: {
     default: {
-      url: 'https://localhost:44372',
+      url: 'https://api.dev-markisa.inveeu.com',
       rootNamespace: 'Markisa',
     },
   },
